@@ -6,7 +6,13 @@ body{margin: auto}
 .content{display:flex; width: 100%}
 .center{flex: 10}
 /* RODAPÉ */
-h2{font-size: 20px; text-align: center}
+footer{
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center
+};
 
 /* NAVBAR */
 nav hr{
