@@ -1,67 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UNES Universidade</title>
-    <link rel="stylesheet" href="./../static/style.css">
-    <link rel="stylesheet" href="./../static/contato.css">
-</head>
-    <body>
-
-        <!--    Espaçamento Navbar  !-->
-        <nav class="backgroundNavbar">
-            <hr>
-            <div>
-                <img src="./../static/img/logo.png" alt="imagem_logo">
-            </div>
-        </nav>
-
-        <!--    Navbar Fixo !-->
-        <nav class="navbar">
-            <!--    Barra Azul  !-->
-            <hr>
-            <!--    Navbar  !-->
-            <div>
-                <div class="startEnd"></div>
-
-                <img src="./../static/img/logo.png" alt="imagem_logo">
-
-                <div class="center"></div>
-                
-                <a href="index.html">Home</a><h1> | </h1>
-                <a href="quemSomos.html">Quem Somos</a><h1> | </h1>
-                <a>Contato</a>
-
-                <div class="startEnd"></div>
-            </div>
-        </nav>
-
-        <!--    Conteúdo !-->
-        <div class="content">
-            <a class="startEnd"></a>
-
-            <div class="center">
-                    <h1>Entre em contato</h1>
-                    <p>Descrição sobre o contato, descrição sobre o contato, descrição sobre o contato, descrição sobre o contato, descrição sobre o contato, descrição sobre o contato.</p>
-                    <hr/>
-                    <form>
-                        Seu e-mail: <br/>
-                        <input class="inputText" type="text" placeholder="Insira um email"> <br/>
-                        Assunto: <br/>
-                        <input class="inputText" type="text" placeholder="Insira um assunto"> <br/>
-                        Descrição:<br/>
-                        <textarea
-                        name="Descrição" cols="14" rows="3" placeholder="Insira uma descrição"></textarea>
-                        <br/>
-                        <input
-                        class="inputButton"type="submit" value="Enviar">
-                    </form>
-            </div>
-            <a class="startEnd"></a>
-        </div>
-
-        <br/><br/><br/><h2>Todos os direitos reservados</h2>
-    </body>
-</html>
+{% extends 'base.html' %}
+{%block navbar%}
+    <a href="./home">Home</a>
+    <h1> | </h1>
+    <a href="./quemSomos">Quem Somos</a>
+    <h1> | </h1>
+    <a>Contato</a>
+{% endblock %}
+{% block conteudo %}
+    <h1>Entre em contato</h1>
+    <p>Descrição sobre o contato, descrição sobre o contato, descrição sobre o contato, descrição sobre o contato, descrição sobre o contato, descrição sobre o contato.</p>
+    <hr/>
+    <form>
+        Seu e-mail: <br />
+        <input class="inputText" type="text" placeholder="Insira um email"> <br />
+        Assunto: <br />
+        <input class="inputText" type="text" placeholder="Insira um assunto"> <br />
+        Descrição:<br />
+        <textarea name="Descrição" cols="14" rows="3" placeholder="Insira uma descrição"></textarea>
+        <br />
+        <input class="inputButton" type="submit" value="Enviar">
+    </form>
+{% endblock %}
