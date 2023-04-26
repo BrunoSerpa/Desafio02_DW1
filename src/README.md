@@ -12,7 +12,7 @@
 
 4º Passo: Em seguida insira o comando:
 
-`python -m venv venv`.
+`py -m venv venv`.
 >Caso os comando não funcionar, troque a palavra python do comando  por <b>py3</b>. 
 
 >> OBS: Se o seu python não for da versão  3.11.2 é possível os comandos não funcionarem. Para instalar a versão desejada <a href="https://www.python.org/downloads/release/python-3112/">Clique Aqui</a> ou vá para o site oficial da linguagem.
